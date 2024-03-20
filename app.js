@@ -10,3 +10,5 @@ const updateLink = () => {
 scheme.addEventListener("input", updateLink);
 ip.addEventListener("input", updateLink);
 path.addEventListener("input", updateLink);
+
+updateLink();
