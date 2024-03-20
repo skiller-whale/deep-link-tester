@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Deep Link Tester</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./app.js"></script>
   </head>
@@ -12,14 +13,19 @@
     </header>
     <main>
       <div>
+        <label for="scheme">Scheme</label>
         <input type="text" name="scheme" value="exp" />
-        <span>://</span>
-        <input type="text" name="ip" value="192.168.0.13:8081" />
-        <span>/--/</span>
-        <input type="text" name="path" value="home" />
       </div>
       <div>
-        <a id="link" href="exp://192.168.0.13:8081/--/home">Open Deep Link</a>
+        <label for="ip">Address</label>
+        <input type="text" name="address" value="192.168.0.13:8081" />
+      </div>
+      <div>
+        <label for="path">Path</label>
+        <input type="text" name="path" value="/--/" />
+      </div>
+      <div>
+        <a id="link" href="exp://192.168.0.13:8081/--/">Open Deep Link</a>
       </div>
     </main>
 </html>
