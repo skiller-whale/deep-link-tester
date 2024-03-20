@@ -2,16 +2,24 @@
 <html>
   <head>
     <title>Deep Link Tester</title>
+    <link rel="stylesheet" href="./style.css" />
     <script defer src="./app.js"></script>
   </head>
   <body>
-    <h1>Deep Link Tester</h1>
-    <div>
-      <input type="text" name="scheme" value="exp" />
-      <span>://</span>
-      <input type="text" name="ip" value="192.168.0.13:8081" />
-      <span>/--/</span>
-      <input type="text" name="path" value="home" />
-      <a id="link" href="exp://192.168.0.13:8081/--/home">Open Deep Link</a>
-    </div>
+    <header>
+      <img src="./sw-logo.png">
+      <h1>Deep Link Tester</h1>
+    </header>
+    <main>
+      <div>
+        <input type="text" name="scheme" value="exp" />
+        <span>://</span>
+        <input type="text" name="ip" value="192.168.0.13:8081" />
+        <span>/--/</span>
+        <input type="text" name="path" value="home" />
+      </div>
+      <div>
+        <a id="link" href="exp://192.168.0.13:8081/--/home">Open Deep Link</a>
+      </div>
+    </main>
 </html>
